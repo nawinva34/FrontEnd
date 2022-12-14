@@ -63,3 +63,13 @@
   line-height: 60px;
   white-space: normal;
 }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:where(.css-dev-only-do-not-override-1hyej8k).ant-card .ant-card-body {
+  padding: 12px;
+  border-radius: 0 0 8px 8px;
+}
