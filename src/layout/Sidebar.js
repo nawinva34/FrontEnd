@@ -1,10 +1,12 @@
 import "../style/Sidebar.css";
 import React from "react";
 import da from "../img/da.png";
+import profilecircle from "../img/profilecircle.svg";
 import { Col, Row, Button } from "antd";
 import { Card } from "antd";
 import {
   WalletOutlined,
+  SettingOutlined,
   SyncOutlined,
   CodepenCircleOutlined,
   AppstoreOutlined,
@@ -47,22 +49,13 @@ const Sidebar = () => {
           background: "#9acfff",
           color: "#ffffff",
           overflow: "auto",
+          width: "368px",
           height: "100vh",
           position: "fixed",
-          left: 0,
-          top: 0,
-          bottom: 0,
           textAlign: "center",
         }}
       >
-        <div
-          style={{
-            height: 90,
-            margin: 16,
-            textAlign: "center",
-            // background: 'rgba(255, 255, 255, 0.2)',
-          }}
-        >
+        <div className="IconDa">
           <img style={{ width: "100px", height: "60px" }} src={da}></img>
         </div>
         <Menu
@@ -94,7 +87,6 @@ const Sidebar = () => {
           <div
             style={{
               padding: "1% 5% 10% 5%",
-              // textAlign: 'center',
               background: "#f3f3f3",
               borderRadius: "25px",
             }}
@@ -111,26 +103,22 @@ const Sidebar = () => {
                 {dataDashboard.map((e) => {
                   return (
                     <Col span={8}>
-                      <Card
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          background: "#d9d9d9",
-                        }}
-                      >
-                        <p style={{paddingBottom: "15px"}}>{e.top}</p>
-                        <p style={{ marginBottom: "0px", marginBottom: "-30px" }}>
-                          {e.title}
-                        </p>
-                        <div style={{ display: "flex", justifyContent: "space-between"}}>
-                          <b style={{ fontSize: "25px" , paddingTop : "20px"}}>{e.Number}</b>
-                          <icon
-                            style={{
-                              color: e.color,
-                              fontSize: "40px",
-                              
-                            }}
+                      <Card className="CardMain">
+                        <div className="HeaderText">
+                          <p
+                            className="Status"
+                            style={{ backgroundColor: e.color }}
                           >
+                            {e.top}
+                          </p>
+                          <SettingOutlined className="Setting" />
+                        </div>
+                        <p style={{ marginBottom: "-30px" }}>{e.title}</p>
+                        <div className="Container">
+                          <b style={{ fontSize: "25px", paddingTop: "20px" }}>
+                            {e.Number}
+                          </b>
+                          <icon style={{ color: e.color, fontSize: "40px" }}>
                             {e.icon}
                           </icon>
                         </div>
@@ -139,112 +127,58 @@ const Sidebar = () => {
                   );
                 })}
                 <Col span={16}>
-                  <Card
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      background: "#d9d9d9",
-                    }}
-                  ></Card>
+                  <Card className="CardMain">
+                    <div className="Card16">
+                      <img className="ImgAcc" src={profilecircle}></img>
+                      <div>
+                        <span className="Text16">
+                          Hello, <b>Nawin</b>
+                        </span>
+                        <p className="Text16">Last Login : 20 mins ago</p>
+                      </div>
+                    </div>
+                  </Card>
                 </Col>
                 <Col span={8}>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      background: "#d9d9d9",
-                      padding: "0px",
-                      borderRadius: "8px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderBottom: "1px solid gray",
-                        padding: "16px 16px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
+                  <Card className="CardMain">
+                    <div className="Paid1">
                       <div>
                         <p>Paid 1</p>
-                        <p>
-                          <b>$102,023.22</b>
-                        </p>
+                        <b>$102,023.22</b>
                       </div>
                       <CodepenCircleOutlined
-                        style={{
-                          fontSize: "30px",
-                          paddingTop: "5px",
-                          color: "#FFDC27",
-                        }}
+                        className="Icon"
+                        style={{ color: "#FFDC27" }}
                       />
                     </div>
-                    <div
-                      style={{
-                        paddingTop: "12px",
-                        borderBottom: "1px solid gray",
-                        padding: "16px 16px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
+                    <div className="Paid1">
                       <div>
                         <p>Paid 2</p>
-                        <p>
-                          <b>$10,203.22</b>
-                        </p>
+                        <b>$10,203.22</b>
                       </div>
                       <CodepenCircleOutlined
-                        style={{
-                          fontSize: "30px",
-                          paddingTop: "5px",
-                          color: "#54A5D2",
-                        }}
+                        className="Icon"
+                        style={{ color: "#54A5D2" }}
                       />
                     </div>
-                    <div
-                      style={{
-                        paddingTop: "12px",
-                        borderBottom: "1px solid gray",
-                        padding: "16px 16px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
+                    <div className="Paid1">
                       <div>
                         <p>Paid 3</p>
-                        <p>
-                          <b>$2,023.22</b>
-                        </p>
+                        <b>$2,023.22</b>
                       </div>
                       <CodepenCircleOutlined
-                        style={{
-                          fontSize: "30px",
-                          paddingTop: "5px",
-                          color: "#69C772",
-                        }}
+                        className="Icon"
+                        style={{ color: "#69C772" }}
                       />
                     </div>
-                    <div
-                      style={{
-                        paddingTop: "12px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        padding: "16px 16px",
-                      }}
-                    >
+                    <div className="Paid4">
                       <div>
                         <p>Paid 4</p>
-                        <p>
-                          <b>$23.22</b>
-                        </p>
+                        <b>$23.22</b>
                       </div>
                       <CodepenCircleOutlined
-                        style={{
-                          fontSize: "30px",
-                          paddingTop: "5px",
-                          color: "#FF9999",
-                        }}
+                        className="Icon"
+                        style={{ color: "#FF9999" }}
                       />
                     </div>
                     <div
@@ -261,7 +195,7 @@ const Sidebar = () => {
                         style={{ fontSize: "30px", color: "#8652DC" }}
                       />
                     </div>
-                  </div>
+                  </Card>
                 </Col>
               </Row>
             </div>

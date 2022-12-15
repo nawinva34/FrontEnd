@@ -1,6 +1,6 @@
 import '../style/App.css';
 import { useState } from 'react';
-import Carditem from '../component/Carditem';
+import CardItem from '../component/CardItem';
 
 function App() {
 
@@ -11,15 +11,14 @@ function App() {
 
   return (
     <>
-      <div style={{ justifyContent: "center", display: "flex" }}>
+      <div className='CardFirst' >
         <h2 style={{ minHeight: "50px" }}>{textInput}</h2>
       </div>
-      <div style={{ justifyContent: "center", display: "flex" }}>
+      <div className='CardFirst' >
         <h2>Name : <input value={textInput} onChange={onChangeInput}></input></h2>
       </div>
-
-      <div style={{ justifyContent: "center", display: "flex", flexWrap: "wrap", padding: "50px" }}>
-        <Carditem />
+      <div className='CardItem'>
+        <CardItem />
       </div>
     </>
   )

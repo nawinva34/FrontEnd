@@ -1,11 +1,43 @@
 .card {
-  height: 250px;
-  width: 200px;
+  height: 303px;
+  width: 236px;
   border: 1px solid none;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px;
   text-align: center;
   background-color: #d0eeff;
   color: white;
   margin: 20px;
 }
+
+.card-inner {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 194px;
+  height: 194px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 22px 0px 22px;
+}
+
+.CardFirst {
+  justify-content: center;
+  display: flex;
+}
+
+.CardItem {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.Date {
+  color: black;
+  padding-top: 34px;
+  font-size: 20px;
+  margin: 0px;
+}
+

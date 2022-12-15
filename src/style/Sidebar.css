@@ -1,75 +1,81 @@
-.navigate {
-  position: fixed;
-  width: 15%;
-  height: 100%;
-  background-color: aliceblue;
-  /* background-image: linear-gradient(135deg, rgba(25, 136, 247, 1) 0%, rgba(24, 247, 232, 1) 77%); */
-  background-image: linear-gradient(
-    135deg,
-    rgba(25, 136, 247, 0.38) 13%,
-    rgba(247, 25, 136, 1) 100%
-  );
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-.navigate ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  top: 2%;
-  left: 0;
-  width: 100%;
-}
-.navigate ul li {
-  /* font-weight: bold; */
-  color: #999;
-  margin-left: 8px;
-}
-.navigate ul li:hover {
-  background-color: #7fcbcd;
-}
-.navigate ul li:nth-child(1):hover {
-  background: transparent;
-}
-
-.navigate ul li a {
-  position: relative;
-  display: block;
-  width: 100%;
-  display: flex;
-  text-decoration: none;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-.navigate ul li a .icon {
-  font-size: 20px;
-  min-width: 80px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-.navigate ul li a .icon .fa {
-  color: beige;
-  font-size: 30px;
-}
-.navigate ul li a .title {
-  font-size: 20px;
-  position: relative;
-  display: block;
-  padding: 0 10px;
-  height: 60px;
-  line-height: 60px;
-  white-space: normal;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 :where(.css-dev-only-do-not-override-1hyej8k).ant-card .ant-card-body {
   padding: 12px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 20px;
+}
+
+.CardMain {
+  width: 100%;
+  height: 100%;
+  background: #d9d9d9;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Paid1 {
+  border-bottom: 1px solid gray;
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Paid4 {
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Icon {
+  font-size: 40px;  
+  padding-top: 15px;
+  margin-right: 15px;
+}
+
+.IconDa {
+  height: 90px;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.HeaderText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Status {
+  display: flex;
+  justify-content: center;
+  border: 1px solid none;
+  border-radius: 20px;
+  background-color: e.color;
+  width: 72px;
+  height: 22px;
+  margin-top: 9px;
+}
+
+.Setting {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.Card16 {
+  width: 100%;
+  height: 100%;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ImgAcc {
+  width: 350px;
+  height: 350px;
+}
+
+
+.Text16 {
+  margin: 0px;
+  font-size: 24px;
 }
