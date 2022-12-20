@@ -1,6 +1,6 @@
-import BACKGROUND from "../img/BACKGROUND.png";
-import Layer5 from "../img/Layer5.png";
-import "../style/Auten.css";
+import BACKGROUND from "../../img/BACKGROUND.png";
+import Layer5 from "../../img/Layer5.png";
+import "../../style/Auten.css";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input } from "antd";
 

@@ -1,5 +1,5 @@
 import { Row, Col, Image, Card } from "antd";
-import DetailImg from "../DetailImg";
+import DetailImg from "../15-12-2022/DetailImg";
 const TRLB = ({ data }) => {
   return (
     <>

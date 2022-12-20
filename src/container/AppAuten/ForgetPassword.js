@@ -1,4 +1,4 @@
-import Auten from "../../component/Auten";
+import Auten from "../../component/15-12-2022/Auten";
 import { Button, Checkbox, Form, Input } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 

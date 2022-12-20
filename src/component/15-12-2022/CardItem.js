@@ -1,5 +1,5 @@
-import pathHome from "../utils/data";
-import "../style/App.css";
+import pathHome from "../../utils/data";
+import "../../style/App.css";
 import { useNavigate } from "react-router-dom";
 
 const CardItem = () => {

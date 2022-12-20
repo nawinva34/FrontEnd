@@ -1,6 +1,6 @@
-import Auten from "../../component/Auten";
+import Auten from "../../component/15-12-2022/Auten";
 import { Form, Input } from "antd";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
+import { LockOutlined } from "@ant-design/icons";
 
 const CreatePassword = () => {
   return (

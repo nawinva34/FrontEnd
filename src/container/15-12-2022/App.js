@@ -1,6 +1,6 @@
-import '../style/App.css';
+import '../../style/App.css';
 import { useState } from 'react';
-import CardItem from '../component/CardItem';
+import CardItem from '../../component/15-12-2022/CardItem';
 
 function App() {
 

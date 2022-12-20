@@ -1,4 +1,4 @@
-import Sidebar from "../layout/Sidebar";
+import Sidebar from "../../layout/Sidebar";
 
 
 const Test1 = () => {
