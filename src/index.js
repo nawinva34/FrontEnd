@@ -16,27 +16,34 @@ import Test7 from "./container/Test7";
 import Test8 from "./container/Test8";
 import Test9 from "./container/Test9";
 import Test10 from "./container/Test10";
+import Auten from "./component/Auten";
+import ForgetPassword from "./container/AppAuten/ForgetPassword";
+import SignIn from "./container/AppAuten/SignIn"; 
+import ResetPassword from "./container/AppAuten/ResetPassword";
+import CreatePassword from "./container/AppAuten/CreatePassword";
+import Task from "./container/19-12-2022/Task";
+import Task2 from "./container/19-12-2022/Task2";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <ForgetPassword />,
   },
   {
     path: "/Test1",
-    element: <Test1 />,
+    element: <SignIn />,
   },
   {
     path: "/Test2",
-    element: <Test2 />,
+    element: <ResetPassword />,
   },
   {
     path: "/Test3",
-    element: <Test3 />,
+    element: <CreatePassword />,
   },
   {
     path: "/Test4",
-    element: <Test4 />,
+    element: <Task2 />,
   },
   {
     path: "/Test5",

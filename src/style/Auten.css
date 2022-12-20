@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-image: url(../img/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -15px;
+}
+
+.container1 {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.DCP {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 100px;
+    color : #4A3A7B;
+}
+
+.SignIn {
+    font-size: 64px;
+    color : #F4AB56;
+    display : flex;
+    justify-content: center;
+    margin : 0px;
+}
+
+.Layer5 {
+    width: 481px;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.login-form-button {
+    width: 220px;
+    /* height: 45px; */
+    background: #8759F2;
+    border-radius: 45px;
+    /* display: flex; */
+}
+
+.From-Sign-in {
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-form-forgot {
+    color: #8759F2;
+    font-size: 16px;
+}
+
+:where(.css-dev-only-do-not-override-1hyej8k).ant-form-item .ant-form-item-control-input-content {
+    flex: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
