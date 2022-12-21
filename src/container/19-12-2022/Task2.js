@@ -8,7 +8,7 @@ import {
   FacebookOutlined,
   MoreOutlined,
 } from "@ant-design/icons";
-import CardBalance from "../../component/19-12-2022/CardBalace"
+import CardBalance from "../../component/19-12-2022/CardBalace";
 import CardName from "../../component/19-12-2022/CardName";
 
 const Task2 = () => {
@@ -55,23 +55,25 @@ const Task2 = () => {
     },
   ];
 
-//   console.log("CardBalance");
+  //   console.log("CardBalance");
 
   return (
-    <div style={{ background: "#f3f3f3" , padding: "20px" }}>
+    <div style={{ background: "#f3f3f3", padding: "20px" }}>
       <Row gutter={[8, 16]}>
-         <div  style={{width : "100vw"}}> <Card>
-          
-                <CardBalance/>
-          
-            
-        </Card>  </div>
-          
+        <div style={{ width: "100vw" }}>
+          <Card>
+            <CardBalance />
+          </Card>
+        </div>
+
         {data.map((e) => {
           return (
             <>
-              <Col span={8} style={{ paddingLeft : "30px" , paddingRight : "30px"}}>
-                <CardName data={e}/>
+              <Col
+                span={8}
+                style={{ paddingLeft: "30px", paddingRight: "30px" }}
+              >
+                <CardName data={e} />
               </Col>
             </>
           );

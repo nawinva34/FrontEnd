@@ -1,5 +1,4 @@
 import { Card } from "antd";
-import CardBalance from "./CardBalace";
 import {
   CaretUpOutlined,
   CaretDownOutlined,

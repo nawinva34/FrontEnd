@@ -44,59 +44,28 @@ const Sidebar = () => {
   } = theme.useToken();
   return (
     <Layout hasSider>
-      <Sider
-        style={{
-          background: "#9acfff",
-          color: "#ffffff",
-          overflow: "auto",
-          width: "368px",
-          height: "100vh",
-          position: "fixed",
-          textAlign: "center",
-        }}
-      >
-        <div className="IconDa">
-          <img style={{ width: "100px", height: "60px" }} src={da}></img>
+      <Sider class="bg-[#9acfff] overflow-auto w-[368rem] h-screen text-center fixed">
+        <div className="flex justify-center h-[90px] mt-[29px]">
+          <img class="w-[100px] h-[60px]" src={da}></img>
         </div>
-        <Menu
-          style={{ background: "#9acfff" }}
+        <Menu className="bg-[#9acfff]"
           mode="inline"
           defaultSelectedKeys={["4"]}
           items={items}
         />
       </Sider>
-      <Layout
-        className="site-layout"
-        style={{
-          marginLeft: 200,
-          background: "#ffffff",
-        }}
-      >
-        <Header
-          style={{
-            padding: 0,
-            background: "#cfedfe",
-          }}
-        />
-        <Content
-          style={{
-            margin: "30px 30px 30px",
-            overflow: "initial",
-          }}
-        >
-          <div
+      <Layout className="ml-[200px] bg-[#ffffff]">
+        <Header className="p-0 bg-[#cfedfe]"/> 
+        <Content className="m-10 overflow-visible" >
+          <div className="bg-[#f3f3f3] rounded-3xl"
             style={{
-              padding: "1% 5% 10% 5%",
-              background: "#f3f3f3",
-              borderRadius: "25px",
+              padding: "1% 5% 10% 5%",  
             }}
           >
-            <p style={{ fontSize: "25px", marginBottom: "0px" }}>
+            <p className="text-lg mt-0">
               <b>Day 1</b>
             </p>
-            <p style={{ fontSize: "13px", marginTop: "0px" }}>
-              Date : 14 Dec 2022
-            </p>
+            <p className="text-xs mt-0">Date : 14 Dec 2022</p>
             <br></br>
             <div>
               <Row gutter={[32, 32]}>

@@ -16,15 +16,16 @@ import Task from "./container/19-12-2022/Task";
 import Task2 from "./container/19-12-2022/Task2";
 import CreateTab from "./container/20-12-2022/CreateTab";
 import Task3 from "./container/20-12-2022/Task3";
+import Tab3 from "./container/20-12-2022/Tab3";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Task3 />,
+    element: <App />,
   },
   {
     path: "/Test1",
-    element: <SignIn />,
+    element: <Test1 />,
   },
   {
     path: "/Test2",

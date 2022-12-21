@@ -8,6 +8,7 @@ const Tab1 = () => {
       <Row gutter={[16, 16]}>
         <Col span={12}>
           <Card title="a" style={{ height: "100%" }}>
+            <h1 className="text-3xl font-bold underline">Hello world!</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -26,11 +27,16 @@ const Tab1 = () => {
           <Card
             title="b"
             style={{ marginBottom: "16px" }}
-            actions={[<Meta title="c" style={{textAlign : "start" , padding: "0 24px"}}/>]}
+            actions={[
+              <Meta
+                title="c"
+                style={{ textAlign: "start", padding: "0 24px" }}
+              />,
+            ]}
           >
             <Meta description="This is the description" />
             <Meta description="This is the description" />
-            <Meta description="This is the description" />  
+            <Meta description="This is the description" />
           </Card>
           <Row gutter={[16, 16]}>
             <Col span={12}>

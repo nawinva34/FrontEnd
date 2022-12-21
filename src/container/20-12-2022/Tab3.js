@@ -5,7 +5,7 @@ const { Meta } = Card;
 
 const Tab3 = () => {
   return (
-    <div>
+    <div className="bg-sky-500/50 py-1 px-1" >
       <Row gutter={[16, 16]}>
         <Col span={8}>
           <Col span={24}>
