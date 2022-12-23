@@ -1,6 +1,7 @@
 import '../../style/App.css';
 import { useState } from 'react';
 import CardItem from '../../component/15-12-2022/CardItem';
+import pathHome from '../../utils/data';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <h2>Name : <input value={textInput} onChange={onChangeInput}></input></h2>
       </div>
       <div className='CardItem'>
-        <CardItem />
+        <CardItem data={pathHome}/>
       </div>
     </>
   )

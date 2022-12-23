@@ -3,7 +3,6 @@ const DetailImg = ({ name , address , tel }) => {
     console.log(name);
   return (
     <>
-    
         <p>{name}</p>
         <p>{address}</p>
         <p>{tel}</p>

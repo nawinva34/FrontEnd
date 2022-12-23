@@ -7,7 +7,7 @@ import DropDown from "../../component/20-12-2022/DropDown";
 
 const Task3 = () => {
   return (
-    <div className="bg-gray-500">
+    <div>
       <div style={{ height: "800px", background: "#151521", padding: "20px" }}>
         <Row gutter={[48, 48]}>
           <Col span={12}>

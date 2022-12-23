@@ -17,6 +17,8 @@ import Task2 from "./container/19-12-2022/Task2";
 import CreateTab from "./container/20-12-2022/CreateTab";
 import Task3 from "./container/20-12-2022/Task3";
 import Tab3 from "./container/20-12-2022/Tab3";
+import Day2 from "./container/15-12-2022/Day2";
+import Day3 from "./container/15-12-2022/Day3";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +30,12 @@ const router = createBrowserRouter([
     element: <Test1 />,
   },
   {
-    path: "/Test2",
-    element: <ResetPassword />,
+    path: "/Day2",
+    element: <Day2 />,
   },
   {
-    path: "/Test3",
-    element: <CreatePassword />,
+    path: "/Day3",
+    element: <Day3 />,
   },
   {
     path: "/Test4",

@@ -1,11 +1,10 @@
-import Sidebar from "../../layout/Sidebar";
-
+import MainContainer from "./MainContainer";
 
 const Test1 = () => {
     return (
         <>
-            <Sidebar />
-            {/* <p>Test1</p> */}
+            <MainContainer />
+
         </>
 
     );

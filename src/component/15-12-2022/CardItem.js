@@ -2,7 +2,8 @@ import pathHome from "../../utils/data";
 import "../../style/App.css";
 import { useNavigate } from "react-router-dom";
 
-const CardItem = () => {
+const CardItem = (props) => {
+  console.log(props)
   let navigate = useNavigate();
 
   const HandleClick = (path, e) => {
@@ -12,7 +13,7 @@ const CardItem = () => {
 
   return (
     <>
-      {pathHome.map((d) => {
+      {props.data.map((d) => {
         return (
           <div className="card" onClick={(e) => HandleClick(d.path, e)}>
             <div className="card-inner">

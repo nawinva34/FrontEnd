@@ -8,13 +8,13 @@ const pathHome = [
     {
         id: 2,
         text: 'Day 2',
-        path: '/test2',
+        path: '/Day2',
         date: '14 Dec 22',
     },
     {
         id: 3,
         text: 'Day 3',
-        path: '/test3',
+        path: '/Day3',
         date: '15 Dec 22',
     },
     {
