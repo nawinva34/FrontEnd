@@ -9,30 +9,13 @@ const PersonalDetail = () => {
         name={"ACCOUNT SETUP"}
         type={true}
       > */}
-      <p className="font-bold text-2xl text-[#329ed4]">ACCOUNT SETUP</p>
+      <p className="font-bold text-2xl text-[#329ed4]">PERSONAL DETAIL</p>
       <br></br>
-      <Form.Item
-        name="First name"
-        rules={[
-          {
-            required: true,
-            message: "Please input your First name",
-          },
-        ]}
-      >
-        <Input.Email prefix={<UserOutlined />} placeholder="First name" />
+      <Form.Item name="First name">
+        <Input prefix={<UserOutlined />} placeholder="First name" />
       </Form.Item>
 
-      <Form.Item
-        className="Last name"
-        name="Confirm New Password"
-        rules={[
-          {
-            required: true,
-            message: "Please input your Last name",
-          },
-        ]}
-      >
+      <Form.Item name="Last name">
         <Input prefix={<UserOutlined />} placeholder="Last name" />
       </Form.Item>
 
@@ -46,6 +29,7 @@ const PersonalDetail = () => {
           <Radio value="b">Female</Radio>
         </Radio.Group>
       </Form.Item>
+
       {/* </FormValidate> */}
     </div>
   );

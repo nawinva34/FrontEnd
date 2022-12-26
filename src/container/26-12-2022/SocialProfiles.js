@@ -1,77 +1,30 @@
 import FormValidate from "../../component/26-12-2022/FormValidate";
-import { Form, Input } from "antd";
-import { LockOutlined, MailOutlined  } from "@ant-design/icons";
+import { Form, Input, Select,  } from "antd";
 
-const AccountSetup = () => {
+const SocialProfiles = () => {
   return (
     <div>
-      <FormValidate
-        name={"Account Setup"}
+      {/* <FormValidate
+        name={"ACCOUNT SETUP"}
         type={true}
-      >
-        <Form.Item
-          name="email"
-          rules={[
-            {
-              required: true,
-              message: "Please input your email address",
-            },
-          ]}
-        >
-            <Input.Email 
-            prefix={<MailOutlined />}
-            placeholder="Email"
-            />
-        </Form.Item>
+      > */}
+      <p className="font-bold text-2xl text-[#329ed4]">SOCIAL PROFILES</p>
+      <br></br>
+      <Form.Item name="Facebook">
+        <Input placeholder="Facebook" />
+      </Form.Item>
 
-        <Form.Item
-          name="Alternative email (optional)"
-          rules={[
-            {
-              required: true,
-              message: "Please input your email address",
-            },
-          ]}
-        >
-            <Input.Email 
-            prefix={<MailOutlined />}
-            placeholder="Alternative email (optional)"
-            />
-        </Form.Item>
+      <Form.Item name="Twitter">
+        <Input placeholder="Twitter" />
+      </Form.Item>
 
-        <Form.Item
-          name="New Password"
-          rules={[
-            {
-              required: true,
-              message: "Please input your password!",
-            },
-          ]}
-        >
-          <Input.Password
-            prefix={<LockOutlined className="site-form-item-icon" />}
-            placeholder="New Password"
-          />
-        </Form.Item>
+      <Form.Item name="Instagram">
+        <Input placeholder="Instagram" />
+      </Form.Item>
 
-        <Form.Item
-          className="Password"
-          name="Confirm New Password"
-          rules={[
-            {
-              required: true,
-              message: "Please input your password!",
-            },
-          ]}
-        >
-          <Input.Password
-            prefix={<LockOutlined className="site-form-item-icon" />}
-            placeholder="Confirm New Password"
-          />
-        </Form.Item>
-      </FormValidate>
+      {/* </FormValidate> */}
     </div>
   );
 };
 
-export default AccountSetup;
+export default SocialProfiles;

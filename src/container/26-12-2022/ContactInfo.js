@@ -1,49 +1,37 @@
 import FormValidate from "../../component/26-12-2022/FormValidate";
-import { Form, Input, DatePicker, Radio } from "antd";
-import { UserOutlined } from "@ant-design/icons";
-// const { RangePicker } = DatePicker;
+import { Form, Input, Select,  } from "antd";
+import { LockOutlined, EnvironmentOutlined } from "@ant-design/icons";
+const { Option } = Select;
 
 const ContactInfo = () => {
   return (
     <div>
-      {/* <FormValidate name={"PERSONAL DETAILS"} type={true}> */}
-      <p className="font-bold text-2xl text-[#329ed4]">PERSONAL DETAILS</p>
+      {/* <FormValidate
+        name={"ACCOUNT SETUP"}
+        type={true}
+      > */}
+      <p className="font-bold text-2xl text-[#329ed4]">CONTACT INFO</p>
       <br></br>
-      <Form.Item
-        name="Address"
-        rules={[
-          {
-            required: true,
-            message: "Please input your Address",
-          },
-        ]}
-      >
-        <Input.Email prefix={<UserOutlined />} placeholder="Address" />
+      <Form.Item name="Address">
+        <Input prefix={<EnvironmentOutlined />} placeholder="Address" />
+      </Form.Item>
+
+      <Form.Item name="City">
+        <Input placeholder="Alternative email (optional)" />
       </Form.Item>
 
       <Form.Item
-        className="City"
-        name="City"
-        rules={[
-          {
-            required: true,
-            message: "Please input your City",
-          },
-        ]}
+        name="Country"
+        hasFeedback
+        rules={[{ required: true, message: "Please select your country!" }]}
       >
-        <Input prefix={<UserOutlined />} placeholder="Last name" />
+        <Select placeholder="Please select a country">
+          <Option value="china">China</Option>
+          <Option value="usa">U.S.A</Option>
+          <Option value="usa">ThaiLand</Option>
+        </Select>
       </Form.Item>
 
-      <Form.Item name="date-picker">
-        <DatePicker />
-      </Form.Item>
-
-      <Form.Item name="radio-group">
-        <Radio.Group>
-          <Radio value="a">Male</Radio>
-          <Radio value="b">Female</Radio>
-        </Radio.Group>
-      </Form.Item>
       {/* </FormValidate> */}
     </div>
   );
