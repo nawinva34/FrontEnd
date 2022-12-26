@@ -1,47 +1,52 @@
-
 import FormValidate from "../../component/26-12-2022/FormValidate";
-import { Form, Input, DatePicker } from "antd";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
-const { RangePicker } = DatePicker;
+import { Form, Input, DatePicker, Radio } from "antd";
+import { UserOutlined } from "@ant-design/icons";
+// const { RangePicker } = DatePicker;
 
-const AccountSetup = () => {
+const ContactInfo = () => {
   return (
     <div>
-      <FormValidate name={"PERSONAL DETAILS"} type={true}>
-        <Form.Item
-          name="First name"
-          rules={[
-            {
-              required: true,
-              message: "Please input your First name",
-            },
-          ]}
-        >
-          <Input.Email prefix={<UserOutlined />} placeholder="First name" />
-        </Form.Item>
+      {/* <FormValidate name={"PERSONAL DETAILS"} type={true}> */}
+      <p className="font-bold text-2xl text-[#329ed4]">PERSONAL DETAILS</p>
+      <br></br>
+      <Form.Item
+        name="Address"
+        rules={[
+          {
+            required: true,
+            message: "Please input your Address",
+          },
+        ]}
+      >
+        <Input.Email prefix={<UserOutlined />} placeholder="Address" />
+      </Form.Item>
 
-        <Form.Item
-          className="Last name"
-          name="Confirm New Password"
-          rules={[
-            {
-              required: true,
-              message: "Please input your Last name",
-            },
-          ]}
-        >
-          <Input.Password
-            prefix={<UserOutlined className="site-form-item-icon" />}
-            placeholder="Last name"
-          />
-        </Form.Item>
+      <Form.Item
+        className="City"
+        name="City"
+        rules={[
+          {
+            required: true,
+            message: "Please input your City",
+          },
+        ]}
+      >
+        <Input prefix={<UserOutlined />} placeholder="Last name" />
+      </Form.Item>
 
-        <Form.Item name="date-picker" label="DatePicker" >
-          <DatePicker />
-        </Form.Item>
-      </FormValidate>
+      <Form.Item name="date-picker">
+        <DatePicker />
+      </Form.Item>
+
+      <Form.Item name="radio-group">
+        <Radio.Group>
+          <Radio value="a">Male</Radio>
+          <Radio value="b">Female</Radio>
+        </Radio.Group>
+      </Form.Item>
+      {/* </FormValidate> */}
     </div>
   );
 };
 
-export default AccountSetup;
+export default ContactInfo;

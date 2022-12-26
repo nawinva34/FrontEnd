@@ -1,11 +1,11 @@
-.container {
+/* .container {
     display: flex;
     height: 100vh;
     background-image: url(../img/BACKGROUND.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: -15px;
-}
+} */
 
 .container1 {
     width: 50%;

@@ -26,7 +26,7 @@ import AccountSetup from "./container/26-12-2022/AccountSetup";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AccountSetup />,
+    element: <FormValidate />,
   },
   {
     path: "/Test1",
