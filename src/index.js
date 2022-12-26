@@ -19,11 +19,14 @@ import Task3 from "./container/20-12-2022/Task3";
 import Tab3 from "./container/20-12-2022/Tab3";
 import Day2 from "./container/15-12-2022/Day2";
 import Day3 from "./container/15-12-2022/Day3";
+import StepForm from "./container/26-12-2022/StepForm";
+import FormValidate from "./component/26-12-2022/FormValidate";
+import AccountSetup from "./container/26-12-2022/AccountSetup";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <AccountSetup />,
   },
   {
     path: "/Test1",
@@ -40,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/Test4",
     element: <Task2 />,
+  },
+  {
+    path: "/Day5",
+    element: <StepForm />,
   },
 ]);
 

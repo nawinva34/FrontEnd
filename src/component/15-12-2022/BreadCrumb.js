@@ -13,17 +13,17 @@ const routes = [
   },
 ];
 function itemRender(route, params, routes, paths) {
-    console.log(route,routes,paths)
-    const newArr = paths.filter((arr,index) => {
-        return index !== paths.length - 1 
-    });
-    console.log("/"+newArr.join("/"));
+  console.log(route, routes, paths);
+  const newArr = paths.filter((arr, index) => {
+    return index !== paths.length - 1;
+  });
+  console.log("/" + newArr.join("/"));
   const last = routes.indexOf(route) === routes.length - 1;
-  console.log(last)
+  console.log(last);
   return last ? (
     <span>{route.breadcrumbName}</span>
   ) : (
-    <Link to={"/"+newArr.join("/")}>{route.breadcrumbName}</Link>
+    <Link to={"/" + newArr.join("/")}>{route.breadcrumbName}</Link>
     // <Link to={newArr.join("/")}>{route.breadcrumbName}</Link>
   );
 }
