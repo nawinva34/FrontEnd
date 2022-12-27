@@ -1,4 +1,4 @@
-import FormValidate from "../../component/26-12-2022/FormValidate";
+import FormValidate from "../../container/26-12-2022/FormValidate";
 import { Form, Input } from "antd";
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
 
@@ -9,7 +9,7 @@ const AccountSetup = () => {
         name={"ACCOUNT SETUP"}
         type={true}
       > */}
-      <p className="font-bold text-2xl text-[#329ed4]">ACCOUNT SETUP</p>
+      <p className="font-bold text-3xl text-[#329ed4] mb-3">ACCOUNT SETUP</p>
       <br></br>
         <Form.Item
           name="Email"
@@ -21,7 +21,7 @@ const AccountSetup = () => {
             },
           ]}
         >
-          <Input prefix={<MailOutlined />} placeholder="Email" />
+          <Input prefix={<MailOutlined />} placeholder="Email" size="large" className="w-[450px]"/>
         </Form.Item>
 
         <Form.Item
@@ -37,6 +37,8 @@ const AccountSetup = () => {
           <Input
             prefix={<MailOutlined />}
             placeholder="Alternative email (optional)"
+            size="large"
+            className="w-[450px]"
           />
         </Form.Item>
 
@@ -53,6 +55,8 @@ const AccountSetup = () => {
           <Input.Password
             prefix={<LockOutlined  />}
             placeholder="New Password"
+            size="large"
+            className="w-[450px]"
           />
         </Form.Item>
 
@@ -70,6 +74,8 @@ const AccountSetup = () => {
           <Input.Password
             prefix={<LockOutlined  />}
             placeholder="Confirm New Password"
+            size="large"
+            className="w-[450px]"
           />
         </Form.Item>
       {/* </FormValidate> */}

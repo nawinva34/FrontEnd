@@ -1,4 +1,4 @@
-import FormValidate from "../../component/26-12-2022/FormValidate";
+import FormValidate from "../../container/26-12-2022/FormValidate";
 import { Form, Input, DatePicker, Radio } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 
@@ -9,22 +9,22 @@ const PersonalDetail = () => {
         name={"ACCOUNT SETUP"}
         type={true}
       > */}
-      <p className="font-bold text-2xl text-[#329ed4]">PERSONAL DETAIL</p>
+      <p className="font-bold text-3xl text-[#329ed4] mb-3">PERSONAL DETAIL</p>
       <br></br>
       <Form.Item name="First name">
-        <Input prefix={<UserOutlined />} placeholder="First name" />
+        <Input prefix={<UserOutlined />} size="large" placeholder="First name" className="w-[450px]"/>
       </Form.Item>
 
       <Form.Item name="Last name">
-        <Input prefix={<UserOutlined />} placeholder="Last name" />
+        <Input prefix={<UserOutlined />} size="large" placeholder="Last name" className="w-[450px]" />
       </Form.Item>
 
       <Form.Item name="date-picker">
-        <DatePicker />
+        <DatePicker size="large" className="w-[450px]"/>
       </Form.Item>
 
-      <Form.Item name="radio-group">
-        <Radio.Group>
+      <Form.Item name="radio-group" >
+        <Radio.Group >
           <Radio value="a">Male</Radio>
           <Radio value="b">Female</Radio>
         </Radio.Group>
